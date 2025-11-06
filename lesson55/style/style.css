@@ -1,0 +1,239 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background: #181E34;
+  color: white;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.blue_btn {
+  width: 20rem;
+  height: 3.5rem;
+  background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+  border-radius: 6.25rem;
+  padding: 1.12rem 1.88rem;
+}
+
+/* хотя кабута бы эти значения тут и не нужны вроде */
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+/* ----------- */
+
+
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 270px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 30px;
+}
+
+.wrapper button {
+  border-radius: 6.25rem;
+  padding: 0.88rem 1.88rem;
+  background: white;
+  color: #2766AE;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  flex-grow: 1;
+  background-image: url(../image/hero_bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  padding: 120px 270px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #181e34cc;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.hero h2 {
+  position: relative;
+  z-index: 3;
+}
+
+.hero_desc {
+  display: flex;
+  gap: 140px;
+  z-index: 3;
+}
+
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.94rem;
+  flex-basis: 440px;
+}
+
+.hero_text p span {
+  color: #01a2cb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.62rem;
+}
+
+.btn_group button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+}
+
+.btn_group button:last-child::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../image/button.png);
+  background-size: contain;
+  align-self: center;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 270px;
+  gap: 60px;
+}
+
+.content p {
+  width: 510px;
+  text-align: center;
+}
+
+.cards_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.88rem;
+}
+
+.card {
+  border: 2px solid #176bae;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  width: 12.75rem;
+  height: 8.81rem;
+  box-shadow: 4px 4px 13px 0 rgba(5, 13, 41, 0.76);
+  background: #197cb8;
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h4 {
+  font-weight: 600;
+  font-size: 1.38rem;
+  text-transform: uppercase;
+}
+
+.card p {
+  width: 145px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px 270px;
+  border-top: 1px solid #323952;
+}
+
+.footer_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.footer_text {
+  width: 270px;
+  text-align-last: left;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.column h4 {
+  font-weight: 600;
+  font-size: 1.38rem;
+  text-transform: uppercase;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+
+/* 323952 */
