@@ -22,8 +22,8 @@ h2 {
 
 /* хотя кабута бы эти значения тут и не нужны вроде */
 .logo {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
 }
 
 .logo img {
@@ -44,19 +44,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 35px 270px;
+  padding: 2.188rem 16.25rem;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .nav_menu {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .wrapper button {
@@ -72,14 +72,14 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 60px;
+  gap: 3.75rem;
   flex-grow: 1;
   background-image: url(../image/hero_bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  padding: 120px 270px;
+  padding: 7.5rem 16.25rem;
 }
 
 .hero::after {
@@ -100,7 +100,7 @@ nav {
 
 .hero_desc {
   display: flex;
-  gap: 140px;
+  gap: 8.75rem;
   z-index: 3;
 }
 
@@ -110,7 +110,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 0.94rem;
-  flex-basis: 440px;
+  flex-basis: 27.5rem;
 }
 
 .hero_text p span {
@@ -131,30 +131,31 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 0.313rem;
   position: relative;
 }
 
 .btn_group button:last-child::after {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   background-image: url(../image/button.png);
   background-size: contain;
   align-self: center;
 }
 
 .content {
+  min-width: 56.25rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 260px;
-  gap: 60px;
+  padding: 6.25rem 16.25rem;
+  gap: 3.75rem;
 }
 
 .content p {
-  width: 510px;
+  width: 31.875rem;
   text-align: center;
 }
 
@@ -188,7 +189,7 @@ nav {
 }
 
 .card p {
-  width: 145px;
+  width: 9.063rem;
   line-height: 1.5;
   text-align: center;
 }
@@ -197,19 +198,19 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 60px 270px;
+  padding: 3.75rem 16.25rem;
   border-top: 1px solid #323952;
 }
 
 .footer_desc {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1rem;
   align-items: flex-start;
 }
 
 .footer_text {
-  width: 270px;
+  width: 17rem;
   text-align-last: left;
 }
 
@@ -218,7 +219,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .column h4 {
@@ -230,10 +231,5 @@ footer {
 .footer_list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
-
-
-
-
-/* 323952 */
