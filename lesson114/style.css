@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background: #ebebea;
+  color: #363735;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* =============================*/
+
+.wrapper {
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  background: #363735;
+  border: 3px solid #9a9e98;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.img__box {
+  width: 30%;
+  height: auto;
+}
+
+.img__box img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.btn__box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__box button {
+  all: unset;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+  border-radius: 22px;
+  background: #f9f9f9;
+  color: #363735;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background .3s ease-in, color .3s ease-in;
+}
+
+.btn__box button:hover {
+  background: #cf0f26;
+  color: #f9f9f9;
+}
+
+/* =============================*/
+
+.modal__wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background: #363735c4;
+  display: none;
+}
+
+.modal__wrapper--active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__inner {
+  width: 630px;
+  height: 430px;
+  border-radius: 20px;
+  background: #f9f9f9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__inner h1 {
+  all: unset;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.modal__inner p {
+  all: unset;
+  width: 415px;
+  height: 40px;
+  text-align: center;
+  vertical-align: sub;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid #9a9e98;
+  font-weight: bold;
+  position: relative;
+  transition: border .5s ease, color .5s ease;
+}
+
+.modal__inner p:hover {
+  border: 3px solid #cf0f26;
+  color: #cf0f26;
+  font-weight: normal;
+}
+
+.modal__inner p::after {
+  display: none;
+  content: "Кураторы школы Aroken.ru самые крутые";
+  width: 444px;
+  height: 36px;
+  position: absolute;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.modal__inner button {
+  all: unset;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+}
+
+.modal__inner button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.modal__inner button path {
+  transition: fill .3s ease;
+}
+
+.modal__inner button:hover path {
+  fill: #cf0f26;
+}
