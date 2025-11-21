@@ -998,6 +998,10 @@
         width: 273px;
         align-items: flex-start;
     }
+
+    .modal {
+        padding: 0 15px;
+    }
 }
 
 /* ============================================ */
@@ -1031,4 +1035,5 @@
     .footer__tel a {
         font-size: 20px;
     }
+
 }
