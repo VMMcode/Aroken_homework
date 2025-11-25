@@ -1,0 +1,240 @@
+.header {
+    background: url(../img/decor/bg-header.png) 50% 100% / cover no-repeat;
+}
+
+.header__inner {
+    margin: 20px 0 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header__inner-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header__logo {
+    max-width: 175px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.header__logo img {
+    width: 100%;
+}
+/* -------------------------- */
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.nav__item {
+    position: relative;
+    z-index: 1;
+}
+
+.nav__item::before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s, visibility .4s;
+}
+
+.nav__item:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+/* ------------------------------ */
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    z-index: 15;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--general-text);
+    position: relative;
+    transition: background .2s;
+    }
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--general-text);
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -8px;
+    transition: transform .4s;
+}
+
+.burger-icon span::after {  
+    bottom: -8px;
+    transition: transform .4s;
+}
+
+.header__inner--opened .burger-icon span {
+    background: transparent;
+}
+
+.header__inner--opened .burger-icon span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.header__inner--opened .burger-icon span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+/* ======================================== */
+/* --------------------HERO---------------- */
+/* ======================================== */
+.hero__inner {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.hero__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.hero__subtitle {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: #b197b2;
+}
+
+.hero__subtitle span {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero__subtitle span::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #b197b2;
+    position: relative;
+    margin: 0 12px;
+}
+
+.hero__subtitle span:last-child::after {
+    content: none;
+}
+
+.hero__title {
+    max-width: 520px;
+    margin-bottom: 30px;
+    font-family: 'Gabriola';
+    font-size: 74px;
+    line-height: 0.82;
+}
+
+.hero__text {
+    max-width: 360px;
+    margin-bottom: 40px;
+}
+
+.hero__img-controls--content {
+    display: none;
+}
+
+.hero__button {
+    max-width: 360px;
+}
+
+.hero__img {
+    max-width: 380px;
+    margin-right: 240px;
+    display: flex;
+    position: relative;
+}
+
+.hero__img > img {
+    width: 100%;
+    position: relative;
+}
+
+.hero__img > img::before {
+    content: "";
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px 0 rgba(184, 148, 126, 0.3);
+    position: absolute;
+    background: var(--accent-bg);
+    inset: 0;
+}
+
+.hero__img-controls {
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: absolute;
+    left: calc(100% - (78px / 2));
+    bottom: calc(0% + 50px);
+}
+
+.hero__play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding-left: 1.6%;
+    background: var(--accent-bg);
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hero__play-button::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 5px;
+    border: 1px solid var(--accent-color);
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.hero__play-button:hover::before {
+    opacity: 1;
+}
