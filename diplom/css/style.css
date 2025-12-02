@@ -1,12 +1,12 @@
-@import "diplom/css/reset.css";
-@import "diplom/css/fonts.css";
-@import "diplom/css/general.css";
-@import "diplom/css/header.css";
-@import "diplom/css/top-sellers.css";
-@import "diplom/css/partners.css";
-@import "diplom/css/reclame.css";
-@import "diplom/css/goods.css";
-@import "diplom/css/footer.css";
+@import "reset.css";
+@import "fonts.css";
+@import "general.css";
+@import "header.css";
+@import "top-sellers.css";
+@import "partners.css";
+@import "reclame.css";
+@import "goods.css";
+@import "footer.css";
 
 
 
@@ -411,3 +411,4 @@
   }
 
 }
+
