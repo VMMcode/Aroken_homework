@@ -1,0 +1,271 @@
+.header {
+  padding: 29px 0px;
+}
+
+.nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 35%;
+  margin: 0 0 0 auto;
+}
+.nav__list {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  text-transform: uppercase;
+}
+.nav__item .nav__link {
+  display: block;
+  letter-spacing: 0.2;
+  color: var(--black-text);
+  position: relative;
+  transition: color .4s ease-out;
+}
+.nav__item .nav__link:hover {
+  color: var(--accent-color);
+}
+.nav__item .nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width .4s;
+}
+.nav__item .nav__link:hover::after {
+  left: 0;
+  width: 100%;
+} 
+
+
+
+.header__search {
+  max-width: 130px;
+  flex-shrink: 0;
+}
+.header__search-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.header__search-btn {
+  appearance: none;
+  background: none;
+  cursor: none;
+}
+.header__search-input {
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .4s;
+}
+.header__search-input:focus {
+  border-bottom: 1px solid var(--black-text);
+}
+.header__search-input::placeholder {
+  text-transform: uppercase;
+  color: var(--black-text);
+  opacity: 1;
+  transition: opacity .4s;
+}
+.header__search-input:focus::placeholder {
+  opacity: 0;
+}
+
+
+.burger-icon {
+  display: none;
+  width: 50px;
+  height: 50px;
+  z-index: 15;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.burger-icon span {
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--general-text);
+    position: relative;
+    transition: background .2s;
+    }
+.burger-icon span::before,
+.burger-icon span::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--general-text);
+    position: absolute;
+}
+.burger-icon span::before {
+    top: -8px;
+    transition: transform .4s;
+}
+.burger-icon span::after {  
+    bottom: -8px;
+    transition: transform .4s;
+}
+.nav--opened .burger-icon span {
+    background: transparent;
+}
+
+.nav--opened .burger-icon span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.nav--opened .burger-icon span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+/* ------------------------------- */
+.hero {
+  margin-bottom: 85px;
+  height: 100%;
+}
+.hero__slider {
+  height: 100vh;
+}
+.hero__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.hero__slide:nth-child(1) {
+  background: linear-gradient(90deg, #ffb800 0%, #de343d 100%);
+}
+.hero__slide:nth-child(2) {
+  background: linear-gradient(90deg, #de343d 0%, #d5dc33 100%);
+  
+}
+.hero__slide:nth-child(3) {
+  background: linear-gradient(90deg, #d5dc33 0%, #2e8645 100%);
+  
+}
+.hero__slide:nth-child(4) {
+  background: linear-gradient(90deg, #2e8645 0%, #2f5a8f 100%);
+  
+}
+.hero__slide:nth-child(5) {
+  background: linear-gradient(90deg, #2f5a8f 0%, #0a0a0a 100%);
+  
+}
+/* ------------------------------ */
+.hero__slide::before {
+  content: "airmax";
+  position: absolute;
+  transform: translateY(calc(100% + 20px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  font-size: 20vw;
+  letter-spacing: -0.04em;
+  color: #ffffff24;
+  text-transform: uppercase;
+  z-index: -1;
+  transition: transform .8s ease-in-out;
+}
+.hero__slide.swiper-slide-active.hero__slide::before {
+  transform: translateY(0px);
+}
+/* ------------------------------ */
+.hero__slide-inner {
+  max-width: 1760px;
+  height: 80%;
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero__product {
+  cursor: pointer;
+  position: relative;
+  max-width: 600px;
+  align-self: center;
+  justify-self: center;
+  transform: translateY(calc(-1 * (100% + 20px)));
+  transition: transform .8s ease-in-out;
+}
+.hero__product img {
+  width: 100%;
+}
+.hero__slide.swiper-slide-active .hero__slide-inner .hero__product {
+  transform: translateY(0px);
+}
+/* ------------------------------ */
+.hero__btn.button {
+  align-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+/* ------------------------------ */
+div.hero__slider .hero__pagination {
+  position: absolute;
+  width: auto;
+  height: 260px;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+/* ------------------------------ */
+span.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: 2px solid #ffffffcb;
+  background: transparent;
+  opacity: 0.7;
+  transition: background .4s;
+}
+span.swiper-pagination-bullet-active {
+  background: #ffffffb0;
+  position: relative;
+}
+span.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.49);
+  width: 40px;
+  height: 0px;
+  top: calc(50% - 2px);
+  left: 13px;
+}
+
+
+/* вообще не смотрится, я честно пробовала по всякому :( */
+/* .hero__product::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 20px;
+  left: -40px;
+  background: url("../img/decor/hero_bg.png") no-repeat center / cover;
+  z-index: -1;
+  opacity: 0.7;
+  transform: translate(0%, 0%);
+  transition: opacity .10s, transform .5s;
+}
+.hero__product:hover::before {
+  opacity: 0;
+  transform: translate(50%, 30%);
+}  */

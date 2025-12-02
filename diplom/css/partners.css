@@ -1,0 +1,109 @@
+.partners {
+  height: 86vh;
+  overflow: hidden;
+}
+
+.partners__inner {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 95px;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners__losung-wrapper {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners__losung {
+  width: 100%;
+  font-size: 50px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  white-space: normal;
+  text-align: center;
+}
+
+.partners__img {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 10px;
+}
+
+.partners__img img {
+  display: inline-block;
+  width: auto;
+}
+
+.partners__img:nth-child(1) img {
+  height: 110px;
+  transform: rotate(-20deg) translate(10px, -10px);
+  transition: transform .4s;
+}
+.partners__img:hover:nth-child(1) img {
+  transform: rotate(5deg) translate(10px, -10px);
+}
+.partners__img:nth-child(2) img {
+  height: 145px;
+  transform: rotate(15deg) translateY(-30px);
+  transition: transform .4s;
+}
+.partners__img:hover:nth-child(2) img {
+  transform: rotate(-5deg) translateY(-30px);
+}
+.partners__img:nth-child(3) img {
+  height: 165px;
+  transform: rotate(-2deg);
+  transition: transform .4s;
+}
+.partners__img:hover:nth-child(3) img {
+  transform: rotate(7deg);
+}
+
+.partners__img::before {
+  content: "";
+  position: absolute;
+  border-radius: 40px;
+}
+
+.partners__img:nth-child(1)::before {
+  width: 200px;
+  height: 80px;
+  background: var(--black-text);
+  bottom: 15px;
+  right: 30px;
+}
+.partners__img:nth-child(2)::before {
+  width: 220px;
+  height: 75px;
+  background: #FFB800;
+  bottom: 35px;
+  left: -25px;
+}
+.partners__img:nth-child(3)::before {
+  width: 170px;
+  height: 65px;
+  background: var(--black-text);
+  top: 55px;
+  left: 10px;
+}
+
+.partners__list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.partners__item {
+  max-width: 190px;
+}
+.partners__item img {
+  width: 100%;
+  display: inline-block;
+}
