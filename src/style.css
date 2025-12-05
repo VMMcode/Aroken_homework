@@ -152,9 +152,32 @@ body.overflow {
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
+    position: relative;
 }
-
-
+.content__list:nth-child(1)::before {
+    content: "Модуль 2. HTML и CSS";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: #F4F4F4;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.content__list:nth-child(2)::before {
+    content: "Модуль 3. Javascript";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: #F4F4F4;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
 
 .content__list-item  {
     cursor: pointer;
@@ -295,4 +318,5 @@ li a {
     }
 
 }
+
 
