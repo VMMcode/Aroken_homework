@@ -148,6 +148,8 @@ body.overflow {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 20px;
+    border: 1px solid #DADEC9;
+    margin-bottom: 20px;
 }
 
 
@@ -289,4 +291,5 @@ li a {
     .sidebar__user {
         margin-left: 0;
     }
+
 }
