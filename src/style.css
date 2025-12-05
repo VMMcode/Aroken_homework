@@ -157,10 +157,11 @@ body.overflow {
 .content__list:nth-of-type(1)::before {
     content: "Модуль 2. HTML и CSS";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -10px;
+    left: 45px;
     width: auto;
     height: auto;
+    padding: 0px 5px;
     background-color: #F4F4F4;
     color: #000;
     font-size: 18px;
@@ -169,10 +170,11 @@ body.overflow {
 .content__list:nth-of-type(2)::before {
     content: "Модуль 3. Javascript";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -10px;
+    left: 45px;
     width: auto;
     height: auto;
+    padding: 0px 5px;
     background-color: #F4F4F4;
     color: #000;
     font-size: 18px;
@@ -318,6 +320,7 @@ li a {
     }
 
 }
+
 
 
 
